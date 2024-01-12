@@ -2,7 +2,7 @@ name: Get daily bing wallpaper in Rust
 
 on:
   schedule:
-    - cron: "0 10 * * *"
+    - cron: "0 11 * * *"
 env:
   CARGO_TERM_COLOR: always
 jobs:
@@ -15,8 +15,8 @@ jobs:
         run: cargo run --release
       - name: Commit changes
         run: |
-          git config --local user.name  "jtcheng"
-          git config --local user.email "jtcheng@cqu.edu.cn"
+          git config --local user.name  "zhbjzhql1"
+          git config --local user.email "zhbjzhql@qq.com"
           git add .
           git commit -m "Add daily bing wallpaper"
       - name: Push changes
